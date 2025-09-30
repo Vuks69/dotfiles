@@ -1,0 +1,8 @@
+#!/bin/env bash
+# Simple wrapper for ShellCheck to enable quick fixing, using its diff output
+
+shfmt -w "$@"
+_patch=""
+if ! _patch=$(shellcheck -f diff "$@"); then
+    [[ -n "$_patch" ]] && git apply <<<"$_patch"
+fi

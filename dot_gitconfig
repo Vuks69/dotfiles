@@ -1,0 +1,28 @@
+[user]
+	name = Vuks69
+	email = 51289041+Vuks69@users.noreply.github.com
+
+[core]
+	excludesFile = .config/git/ignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[push]
+	autoSetupRemote = true
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[checkout]
+	workers = 16
+[init]
+	defaultBranch = main

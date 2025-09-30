@@ -1,0 +1,26 @@
+#!/bin/bash
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+EXTRAPATH="$HOME/.local/bin:$HOME/bin:$HOME/.spicetify:"
+# User specific environment
+# shellcheck disable=SC2076
+if ! [[ "$PATH" =~ "$EXTRAPATH" ]]; then
+	PATH="$EXTRAPATH:$PATH"
+fi
+export PATH
+
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+	for rc in ~/.bashrc.d/*; do
+		if [ -f "$rc" ]; then
+			# shellcheck source=/dev/null
+			. "$rc"
+		fi
+	done
+fi
+unset rc

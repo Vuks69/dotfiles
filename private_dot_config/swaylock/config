@@ -1,0 +1,4 @@
+# Image path supports environment variables and shell expansions,
+# e.g. image=$HOME/Pictures/default.png
+image=~/Pictures/wallpapers/nord-color-blast.png
+scaling=fill
