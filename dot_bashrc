@@ -6,7 +6,7 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-EXTRAPATH="$HOME/.local/bin:$HOME/bin:$HOME/.spicetify:"
+EXTRAPATH="$HOME/.local/bin:$HOME/.spicetify:"
 # User specific environment
 # shellcheck disable=SC2076
 if ! [[ "$PATH" =~ "$EXTRAPATH" ]]; then
