@@ -14,5 +14,9 @@
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "catppuccin-mocha",
     "discord.detailsEditing": "Editing {dir_name}/{file_name}",
-    "discord.detailsIdling": "Rethinking life choices"
+    "discord.detailsIdling": "Rethinking life choices",
+    "files.watcherExclude": {
+        "**/node_modules/**": true
+    },
+    "search.followSymlinks": false
 }

@@ -13,7 +13,7 @@ set $screen_left DP-3
 set $screen_midd DP-2
 set $screen_righ HDMI-A-1
 output $screen_left position 0,0
-output $screen_midd position 1920,0
+output $screen_midd position 1920,0 allow_tearing yes
 output $screen_righ position 4480,0 transform 90
 output * bg $wallpaper_dir/wallhaven-vqm813.jpg fill
 
@@ -46,6 +46,7 @@ exec swayidle -w \
 #   middle_emulation enabled
 # }
 input type:keyboard xkb_layout pl
+input type:pointer accel_profile flat
 
 # --- Key bindings ---
 # Basics
