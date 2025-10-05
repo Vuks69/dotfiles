@@ -1,6 +1,31 @@
 # Sway config
 # Reference: man 5 sway
 
+# set {
+# 	$Alt Mod1
+# 	$Meta Mod4
+# 	$bindsm bindsym --no-repeat
+# 	$notify notify-send -t 750 --app-name ""
+# 	$message notify-send -t 5000 --app-name ""
+# 	$notifyAct dunstctl action
+# 	$notifyClose dunstctl close
+# 	$run exec --no-startup-id
+# 	$bg $(find $XDG_PICTURES_DIR/bg/* | shuf -n1)
+# 	$block-standby [ ! $(pidof zathura) ]
+# 	$block-suspend [ ! $(pidof {python,yt-dlp,zathura}) ]
+# 	$moveto "move container to workspace"
+# 	#$setbg output * bg $bg fill
+# 	$setbg output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+# 	#$lock swaymsg "$setbg" | swaylock --indicator-idle-visible -ei $bg
+# 	$lock swaymsg "$setbg" | waylock -ignore-empty-password
+# 	$wsget "$(( $( swaymsg -t get_workspaces | jq '.[] | select(.focused).num' )))"
+# 	$wsnext "$(( $( swaymsg -t get_workspaces | jq '.[] | select(.focused).num' ) +1))"
+# 	$wsprev "$(( $( swaymsg -t get_workspaces | jq '.[] | select(.focused).num' ) -1))"
+# 	$getvol $notify $([ ! $(pactl get-sink-mute @DEFAULT_SINK@ | grep no) ] && \
+# 		echo '🔇' || echo '🔊') -h int:value:$(pactl get-sink-volume @DEFAULT_SINK@ |\
+# 			grep Volume | awk '{print $5}' | sed 's/%//')
+# }
+
 # --- Variables ---
 set $mod Mod4
 set $term kitty
