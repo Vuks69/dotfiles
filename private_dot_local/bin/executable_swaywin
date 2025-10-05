@@ -14,7 +14,7 @@ row=$(swaymsg -t get_tree | jq  -r '
 | sed 's/&/&amp;/g' \
 | fuzzel --dmenu --width 96)
 
-if [ ! -z "$row" ]
+if [ -n "$row" ]
 then
     # shellcheck disable=SC2001
     winid=$(echo "$row" | sed 's/.*(\([0-9]*\))$/\1/')
