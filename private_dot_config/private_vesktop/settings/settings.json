@@ -240,7 +240,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 650,
-            "zoom": 1.6,
+            "zoom": 2.7999999999999994,
             "saveZoomValues": true,
             "nearestNeighbour": false,
             "square": false,
@@ -252,7 +252,8 @@
             "sortByAffinity": true
         },
         "InvisibleChat": {
-            "enabled": true
+            "enabled": true,
+            "savedPasswords": "password, Password"
         },
         "IrcColors": {
             "enabled": false
@@ -451,7 +452,8 @@
             "groups": true,
             "servers": true,
             "friends": true,
-            "friendRequestCancels": true
+            "friendRequestCancels": true,
+            "notices": false
         },
         "ReplaceGoogleSearch": {
             "enabled": false
@@ -467,7 +469,10 @@
         },
         "ReviewDB": {
             "enabled": true,
-            "notifyReviews": true
+            "notifyReviews": true,
+            "showWarning": true,
+            "hideBlockedUsers": true,
+            "hideTimestamps": false
         },
         "RoleColorEverywhere": {
             "enabled": false
@@ -684,6 +689,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1759662023133
+        "settingsSyncVersion": 1760049585722
     }
 }
