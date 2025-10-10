@@ -1,13 +1,14 @@
+# Enforce dark system theme
+GTK_THEME=Adwaita:dark
+
+# These variables successfully removed pointer input lag in The Finals
 EGL_PLATFORM=wayland
 GDK_BACKEND=wayland
-
-QT_AUTO_SCREEN_SCALE_FACTOR=1
 QT_QPA_PLATFORM=wayland
+QT_AUTO_SCREEN_SCALE_FACTOR=1
 QT_SCALE_FACTOR=1
 QT_WAYLAND_DISABLE_WINDOWDECORATION=1
-
 WLR_DRM_NO_ATOMIC=1
 WLR_NO_HARDWARE_CURSORS=1
-XWAYLAND_NO_GLAMOR=0 # testing option. setting this breaks steam. unknown benefits.
-
+XWAYLAND_NO_GLAMOR=0 # testing option. setting this to 1 breaks steam. unknown benefits.
 SWAY_EXTRA_ARGS=-Dnoscanout
