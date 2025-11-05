@@ -240,7 +240,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 650,
-            "zoom": 2.7999999999999994,
+            "zoom": 6.999999999999998,
             "saveZoomValues": true,
             "nearestNeighbour": false,
             "square": false,
@@ -373,7 +373,7 @@
             "enabled": false
         },
         "NoTypingAnimation": {
-            "enabled": false
+            "enabled": true
         },
         "NoUnblockToJump": {
             "enabled": true
@@ -465,7 +465,7 @@
             "enabled": true
         },
         "ReverseImageSearch": {
-            "enabled": false
+            "enabled": true
         },
         "ReviewDB": {
             "enabled": true,
@@ -534,7 +534,9 @@
             "autoDisable": true
         },
         "SilentTyping": {
-            "enabled": false
+            "enabled": true,
+            "isEnabled": true,
+            "showIcon": false
         },
         "SortFriendRequests": {
             "enabled": true,
@@ -584,7 +586,9 @@
             "enabled": false
         },
         "Translate": {
-            "enabled": false
+            "enabled": true,
+            "autoTranslate": false,
+            "showChatBarButton": true
         },
         "TypingIndicator": {
             "enabled": false
@@ -641,7 +645,8 @@
             "enabled": false
         },
         "VolumeBooster": {
-            "enabled": true
+            "enabled": true,
+            "multiplier": 2
         },
         "WebKeybinds": {
             "enabled": true
@@ -689,6 +694,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1760049585722
+        "settingsSyncVersion": 1762157445675
     }
 }
