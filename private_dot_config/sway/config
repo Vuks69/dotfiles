@@ -30,7 +30,9 @@
 set $mod Mod4
 set $term kitty
 set $rofi_cmd rofi -terminal '$term'
-set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
+set $fuzzel_cmd fuzzel -T '$term'
+# set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
+set $menu $fuzzel_cmd
 set $wallpaper_dir $HOME/Pictures/wallpapers
 
 # --- Output configuration ---
