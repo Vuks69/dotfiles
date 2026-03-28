@@ -58,7 +58,7 @@
             "enabled": false
         },
         "AnonymiseFileNames": {
-            "enabled": true,
+            "enabled": false,
             "anonymiseByDefault": true,
             "method": 0,
             "randomisedLength": 7
@@ -240,7 +240,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 650,
-            "zoom": 6.999999999999998,
+            "zoom": 2.2,
             "saveZoomValues": true,
             "nearestNeighbour": false,
             "square": false,
@@ -324,10 +324,6 @@
             "ignoreUsers": "",
             "ignoreChannels": "",
             "ignoreGuilds": ""
-        },
-        "MessageTags": {
-            "enabled": false,
-            "clyde": true
         },
         "MutualGroupDMs": {
             "enabled": true
@@ -536,7 +532,8 @@
         "SilentTyping": {
             "enabled": true,
             "isEnabled": true,
-            "showIcon": false
+            "showIcon": false,
+            "contextMenu": true
         },
         "SortFriendRequests": {
             "enabled": true,
@@ -588,7 +585,10 @@
         "Translate": {
             "enabled": true,
             "autoTranslate": false,
-            "showChatBarButton": true
+            "showChatBarButton": true,
+            "service": "google",
+            "receivedInput": "auto",
+            "receivedOutput": "en"
         },
         "TypingIndicator": {
             "enabled": false
@@ -682,6 +682,16 @@
         },
         "WebContextMenus": {
             "enabled": true
+        },
+        "MoreQuickReactions": {
+            "enabled": false
+        },
+        "CustomCommands": {
+            "enabled": false,
+            "clyde": true
+        },
+        "NoDefaultHangStatus": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -694,6 +704,10 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1762157445675
+        "settingsSyncVersion": 1774137462889
+    },
+    "uiElements": {
+        "chatBarButtons": {},
+        "messagePopoverButtons": {}
     }
 }

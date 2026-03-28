@@ -33,7 +33,7 @@ set $rofi_cmd rofi -terminal '$term'
 set $fuzzel_cmd fuzzel -T '$term'
 # set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 set $menu $fuzzel_cmd
-set $wallpaper_dir $HOME/Pictures/wallpapers
+set $wallpaper_dir $HOME/Pictures/wallpapers/dark
 
 # --- Output configuration ---
 set $screen_left DP-3
@@ -48,13 +48,6 @@ output * bg "$(find $wallpaper_dir -type f | shuf -n 1)" fill
 workspace 1 output $screen_left
 workspace 2 output $screen_midd
 workspace 3 output $screen_righ
-
-# Get IDs or classes with swaymsg -t get_tree
-assign [app_id="org.mozilla.firefox"] 1
-assign [app_id="thunderbird"] 1
-assign [class="Spotify"] 1
-assign [class="steam"] 2
-assign [class="vesktop"] 3
 
 # --- Idle configuration ---
 set $lockprog swaylock -efF

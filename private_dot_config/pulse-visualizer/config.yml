@@ -1,0 +1,133 @@
+oscilloscope:
+  flip_x: false
+  centered: false
+  edge_compression:
+    enabled: false
+    range: 0.100000016
+  pitch:
+    follow: true
+    cycles: 0
+    min_cycle_time: 16
+    type: zero_crossing
+    alignment: center
+  lowpass:
+    enabled: false
+    order: 4
+    cutoff: 200
+  beam_multiplier: 1
+  window: 50
+  bandpass:
+    bandwidth: 10
+    sidelobe: 60
+  rotation: 0
+
+fft:
+  flip_x: false
+  markers: true
+  cursor: false
+  readout_header: true
+  smoothing:
+    enabled: true
+    fall_speed: 50
+    hover_fall_speed: 10
+    rise_speed: 495
+  cqt:
+    enabled: true
+    bins_per_octave: 60
+  sphere:
+    enabled: false
+    max_freq: 5000
+    base_radius: 0.100000001
+  size: 4096
+  beam_multiplier: 1
+  slope: 3
+  limits:
+    max_db: 0
+    max_freq: 22000
+    min_db: -60
+    min_freq: 10
+  key: sharp
+  mode: midside
+  rotation: 0
+
+spectrogram:
+  iterative_reassignment: true
+  window: 4
+  limits:
+    max_db: -10
+    min_db: -60
+  frequency_scale: log
+
+window:
+  decorations: true
+  always_on_top: false
+  wayland: false
+  default_width: 1080
+  default_height: 200
+  fps_limit: 60
+  theme: mocha.txt
+
+debug:
+  log_fps: false
+  show_bandpassed: false
+
+phosphor:
+  enabled: true
+  beam:
+    rainbow: false
+    energy: 59.9627686
+  blur:
+    spread: 128
+    near_intensity: 0.600000024
+    far_intensity: 0.800000012
+  screen:
+    decay: 30
+    curvature: 0.0900000036
+    gap: 0.0299999993
+    vignette: 0.26000005
+    chromatic_aberration: 0.0100000016
+    grain: 0.100000001
+  reflections:
+    strength: 0.699999988
+
+vu:
+  momentum:
+    enabled: true
+    spring_constant: 500
+    damping_ratio: 10
+  window: 100
+  calibration_db: 3
+  needle_width: 2
+  style: digital
+  scale: log
+
+lissajous:
+  spline_segments: 10
+  beam_multiplier: 1.00000024
+  spline_tension: 1.00000012
+  mode: normal
+  rotation: 0
+
+audio:
+  silence_threshold: -90
+  sample_rate: 48000
+  gain_db: 0
+  engine: pipewire
+  device: default
+
+lufs:
+  mode: momentary
+  scale: log
+  label: compact
+
+font: ~/.local/share/fonts/JetBrainsMono/JetBrainsMonoNerdFont-Medium.ttf
+
+visualizers:
+  hidden:
+    - spectrogram
+  main:
+    - vu
+    - lufs
+    - lissajous
+    - oscilloscope
+    - spectrum_analyzer
