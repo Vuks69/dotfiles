@@ -1,10 +1,17 @@
 {
-  "servers": {
-    "nixos": {
-      "command": "uvx",
-      "args": [
-        "mcp-nixos"
-      ]
-    }
-  }
+	"servers": {
+		"nixos": {
+			"command": "uvx",
+			"args": [
+				"mcp-nixos"
+			],
+			"type": "stdio"
+		},
+		"godoc-mcp": {
+			"type": "stdio",
+			"command": "godoc-mcp",
+			"args": []
+		}
+	},
+	"inputs": []
 }

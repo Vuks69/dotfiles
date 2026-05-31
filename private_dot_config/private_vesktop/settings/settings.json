@@ -82,7 +82,8 @@
             "enabled": false
         },
         "BetterRoleContext": {
-            "enabled": true
+            "enabled": true,
+            "roleIconFileFormat": "png"
         },
         "BetterRoleDot": {
             "enabled": false
@@ -100,7 +101,7 @@
             "enabled": false
         },
         "BiggerStreamPreview": {
-            "enabled": false
+            "enabled": true
         },
         "BlurNSFW": {
             "enabled": false
@@ -192,7 +193,8 @@
             "enabled": false
         },
         "FixSpotifyEmbeds": {
-            "enabled": false
+            "enabled": true,
+            "volume": 20.03610108303249
         },
         "FixYoutubeEmbeds": {
             "enabled": false
@@ -240,7 +242,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 650,
-            "zoom": 2.2,
+            "zoom": 5.799999999999999,
             "saveZoomValues": true,
             "nearestNeighbour": false,
             "square": false,
@@ -449,7 +451,7 @@
             "servers": true,
             "friends": true,
             "friendRequestCancels": true,
-            "notices": false
+            "notices": true
         },
         "ReplaceGoogleSearch": {
             "enabled": false
@@ -508,10 +510,16 @@
             "iconSize": 32
         },
         "ShowHiddenChannels": {
-            "enabled": false
+            "enabled": true,
+            "hideUnreads": true,
+            "showMode": 0,
+            "defaultAllowedUsersAndRolesDropdownState": true
         },
         "ShowHiddenThings": {
-            "enabled": false
+            "enabled": true,
+            "showTimeouts": true,
+            "showInvitesPaused": true,
+            "showModView": true
         },
         "ShowMeYourName": {
             "enabled": true,
@@ -540,7 +548,8 @@
             "showDates": true
         },
         "SpotifyControls": {
-            "enabled": false
+            "enabled": true,
+            "hoverControls": false
         },
         "SpotifyCrack": {
             "enabled": false,
@@ -551,7 +560,7 @@
             "enabled": false
         },
         "StartupTimings": {
-            "enabled": false
+            "enabled": true
         },
         "StickerPaste": {
             "enabled": false
@@ -672,7 +681,8 @@
         },
         "Settings": {
             "enabled": true,
-            "settingsLocation": "aboveNitro"
+            "settingsLocation": "aboveNitro",
+            "includeVencordInfoWhenCopying": true
         },
         "DisableDeepLinks": {
             "enabled": true
@@ -684,13 +694,23 @@
             "enabled": true
         },
         "MoreQuickReactions": {
-            "enabled": false
+            "enabled": true,
+            "reactionCount": 8
         },
         "CustomCommands": {
             "enabled": false,
             "clyde": true
         },
         "NoDefaultHangStatus": {
+            "enabled": false
+        },
+        "CharacterCounter": {
+            "enabled": false
+        },
+        "ConcatenatedComponentExtractor": {
+            "enabled": true
+        },
+        "NoMiddleClickPaste": {
             "enabled": false
         }
     },
@@ -704,10 +724,11 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1774137462889
+        "settingsSyncVersion": 1780231860851
     },
     "uiElements": {
         "chatBarButtons": {},
         "messagePopoverButtons": {}
-    }
+    },
+    "windowsMaterial": "none"
 }

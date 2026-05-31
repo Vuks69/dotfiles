@@ -9,7 +9,13 @@
         "pl"
     ],
     "audio": {
-        "deviceSelect": true
+        "deviceSelect": false,
+        "workaround": false,
+        "granularSelect": false,
+        "ignoreInputMedia": false,
+        "ignoreDevices": true,
+        "onlyDefaultSpeakers": true,
+        "onlySpeakers": true
     },
     "splashBackground": "rgb(18, 18, 20)"
 }

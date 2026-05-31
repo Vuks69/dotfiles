@@ -19,5 +19,24 @@
         "**/node_modules/**": true
     },
     "search.followSymlinks": false,
-    "chat.viewSessions.orientation": "stacked"
+    "chat.viewSessions.orientation": "stacked",
+    "gitblame.extendedHoverInformation": "inline",
+    "gitblame.inlineMessageEnabled": true,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "python.createEnvironment.trigger": "off",
+    "nixEnvSelector.useFlakes": true,
+    "diffEditor.renderSideBySide": false,
+    "json.schemaDownload.trustedDomains": {
+        "https://developer.microsoft.com/json-schemas/": true,
+        "https://json-schema.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://models.dev/model-schema.json": true,
+        "https://opencode.ai/config.json": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
+        "https://schemastore.azurewebsites.net/": true,
+        "https://www.schemastore.org/": true
+    },
+    "extensions.autoUpdate": false
 }
