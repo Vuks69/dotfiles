@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=NNN File Manager
+GenericName=File Manager
+Comment=Browse the filesystem with the file manager
+Icon=nnn
+Exec=nnn %U
+Terminal=true
+Categories=System;Core;FileTools;FileManager;
+MimeType=inode/directory;
+Keywords=file manager;explorer;finder;browser;folders;directory;directories;partitions;drives;network;devices;rename;move;copy;delete;permissions;home;

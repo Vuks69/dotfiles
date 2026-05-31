@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.17.0
+Name=LocalSend
+GenericName=Network File Sharing
+Comment=Local network file sharing utility
+Icon=localsend
+Exec=localsend
+Terminal=false
+Categories=FileTools;FileManager;
+Keywords=share;network;devices;copy;delete;

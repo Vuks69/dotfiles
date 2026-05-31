@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=DRG Mod Integration
+Exec=env -u WAYLAND_DISPLAY /home/vuks/.local/bin/drg_mod_integration
+Terminal=false
+Categories=Utility;

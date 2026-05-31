@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Vintage Story Map Tools
+Exec=/home/vuks/.local/bin/vsmaptools
+Terminal=false
+Categories=Utility;
