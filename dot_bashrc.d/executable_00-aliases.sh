@@ -11,10 +11,10 @@ alias gc='git commit -m "'
 
 # git
 alias gpu='git pull'
+alias gco='git checkout'
+alias gcm='git commit -m'
+alias gca='git commit --amend'
 alias diffbranch='git diff $(git merge-base --fork-point master)'
-
-# carcassonne
-#alias carcassonne='~/Documents/carcassonne/jcloisterzone-5.12.1.AppImage --in-process-gpu'
 
 # ssh
 alias sci='ssh-copy-id -i ~/.ssh/id_ed25519.pub'

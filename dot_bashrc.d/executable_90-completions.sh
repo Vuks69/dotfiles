@@ -1,10 +1,16 @@
 #!/bin/bash
 
+command_exists() {
+    command -v "$1" >/dev/null
+}
+
 # glow
-command -v glow >/dev/null && source <(glow completion bash)
+# shellcheck disable=SC1090
+command_exists glow && source <(glow completion bash)
 
 # fzf
-command -v fzf >/dev/null && source <(fzf --bash)
+# shellcheck disable=SC1090
+command_exists fzf && source <(fzf --bash)
 
 # starship
-command -v starship >/dev/null && eval "$(starship init bash)"
+command_exists starship && eval "$(starship init bash)"

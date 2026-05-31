@@ -6,13 +6,15 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-EXTRAPATH="$HOME/.local/bin:$HOME/.spicetify:"
+GOPATH="$HOME/go"
+EXTRAPATH="$HOME/.local/bin:$HOME/.spicetify:$GOPATH/bin:"
 # User specific environment
 # shellcheck disable=SC2076
 if ! [[ "$PATH" =~ "$EXTRAPATH" ]]; then
 	PATH="$EXTRAPATH:$PATH"
 fi
 export PATH
+export GOPATH
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
