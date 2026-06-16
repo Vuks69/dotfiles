@@ -1,0 +1,4 @@
+color cursor      color0  color2  bold
+color cursor-blur color0  color2  bold reverse
+color title-focus color8  color4  bold
+color title-blur  color8  color6  bold
