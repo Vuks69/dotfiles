@@ -7,7 +7,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 GOPATH="$HOME/go"
-EXTRAPATH="$HOME/.local/bin:$HOME/.spicetify:$GOPATH/bin:"
+EXTRAPATH="$HOME/.local/bin:$HOME/.spicetify:$GOPATH/bin:/home/vuks/.cargo/bin"
 # User specific environment
 # shellcheck disable=SC2076
 if ! [[ "$PATH" =~ "$EXTRAPATH" ]]; then
