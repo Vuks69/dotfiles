@@ -19,11 +19,8 @@
         "**/node_modules/**": true
     },
     "search.followSymlinks": false,
-    "chat.viewSessions.orientation": "stacked",
     "gitblame.extendedHoverInformation": "inline",
     "gitblame.inlineMessageEnabled": true,
-    "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "python.createEnvironment.trigger": "off",
     "nixEnvSelector.useFlakes": true,
     "diffEditor.renderSideBySide": false,
@@ -38,5 +35,15 @@
         "https://schemastore.azurewebsites.net/": true,
         "https://www.schemastore.org/": true
     },
-    "extensions.autoUpdate": false
+    "extensions.autoUpdate": "off",
+    "chat.viewSessions.orientation": "stacked",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml"
+    ]
 }

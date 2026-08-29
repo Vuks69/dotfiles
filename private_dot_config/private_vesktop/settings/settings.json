@@ -242,7 +242,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 650,
-            "zoom": 5.799999999999999,
+            "zoom": 2.7999999999999994,
             "saveZoomValues": true,
             "nearestNeighbour": false,
             "square": false,
@@ -262,19 +262,6 @@
         },
         "KeepCurrentChannel": {
             "enabled": false
-        },
-        "LastFMRichPresence": {
-            "enabled": false,
-            "shareUsername": false,
-            "shareSong": true,
-            "hideWithSpotify": true,
-            "hideWithActivity": false,
-            "statusName": "some music",
-            "statusDisplayType": "off",
-            "nameFormat": "status-name",
-            "useListeningStatus": false,
-            "missingArt": "lastfmLogo",
-            "showLastFmLogo": true
         },
         "LoadingQuotes": {
             "enabled": false,
@@ -318,12 +305,12 @@
             "enabled": true,
             "deleteStyle": "text",
             "logDeletes": true,
-            "collapseDeleted": false,
+            "collapseDeleted": true,
             "logEdits": true,
             "inlineEdits": true,
             "ignoreBots": false,
             "ignoreSelf": false,
-            "ignoreUsers": "",
+            "ignoreUsers": "966695034340663367",
             "ignoreChannels": "",
             "ignoreGuilds": ""
         },
@@ -510,7 +497,7 @@
             "iconSize": 32
         },
         "ShowHiddenChannels": {
-            "enabled": true,
+            "enabled": false,
             "hideUnreads": true,
             "showMode": 0,
             "defaultAllowedUsersAndRolesDropdownState": true
@@ -658,7 +645,9 @@
             "multiplier": 2
         },
         "WebKeybinds": {
-            "enabled": true
+            "enabled": true,
+            "showNavigationButtons": true,
+            "overrideCommonKeybinds": true
         },
         "WebScreenShareFixes": {
             "enabled": true
@@ -712,6 +701,22 @@
         },
         "NoMiddleClickPaste": {
             "enabled": false
+        },
+        "MusicRichPresence": {
+            "enabled": false,
+            "shareUsername": false,
+            "shareSong": true,
+            "hideWithSpotify": true,
+            "hideWithActivity": false,
+            "statusName": "some music",
+            "statusDisplayType": "off",
+            "nameFormat": "status-name",
+            "useListeningStatus": false,
+            "missingArt": "lastfmLogo",
+            "showLogo": true
+        },
+        "TenorGifSearch": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -724,7 +729,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1780231860851
+        "settingsSyncVersion": 1787227167485
     },
     "uiElements": {
         "chatBarButtons": {},
