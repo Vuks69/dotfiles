@@ -1,16 +1,11 @@
 #!/bin/bash
+# shellcheck disable=SC1090
 
 command_exists() {
     command -v "$1" >/dev/null
 }
 
-# glow
-# shellcheck disable=SC1090
 command_exists glow && source <(glow completion bash)
-
-# fzf
-# shellcheck disable=SC1090
 command_exists fzf && source <(fzf --bash)
-
-# starship
 command_exists starship && eval "$(starship init bash)"
+command_exists ykman && source <(_YKMAN_COMPLETE=bash_source ykman)

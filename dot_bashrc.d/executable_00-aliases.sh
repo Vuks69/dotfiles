@@ -18,3 +18,7 @@ alias diffbranch='git diff $(git merge-base --fork-point master)'
 
 # ssh
 alias sci='ssh-copy-id -i ~/.ssh/id_ed25519.pub'
+
+# other
+alias chromium-be-gone="sudo sed -i 's/chromium-browser.desktop;//' /usr/share/applications/mimeinfo.cache"
+alias fixwaydroid="sudo systemctl restart waydroid-container.service"
