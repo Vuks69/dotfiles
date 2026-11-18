@@ -48,6 +48,7 @@ output * bg "$(find $wallpaper_dir -type f | shuf -n 1)" fill
 workspace 1 output $screen_left
 workspace 2 output $screen_midd
 workspace 3 output $screen_righ
+workspace_layout tabbed
 
 # --- Idle configuration ---
 set $lockprog swaylock -efF

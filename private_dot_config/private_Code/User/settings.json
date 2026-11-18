@@ -37,7 +37,7 @@
     },
     "extensions.autoUpdate": "off",
     "chat.viewSessions.orientation": "stacked",
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "yaml.disableSchemaDetection": [
         "**/.github/workflows/*.yml",
         "**/.github/workflows/*.yaml",
@@ -45,5 +45,6 @@
         "**/.gitea/workflows/*.yaml",
         "**/.forgejo/workflows/*.yml",
         "**/.forgejo/workflows/*.yaml"
-    ]
+    ],
+    "extensions.ignoreRecommendations": true
 }

@@ -7,7 +7,7 @@ alias ll='ls -lhF --color=auto'
 alias lla='ls -lAhF --color=auto'
 
 # work
-alias gc='git commit -m "'
+alias uhf='uvx hf'
 
 # git
 alias gpu='git pull'

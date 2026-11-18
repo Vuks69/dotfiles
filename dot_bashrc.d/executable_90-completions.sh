@@ -9,3 +9,5 @@ command_exists glow && source <(glow completion bash)
 command_exists fzf && source <(fzf --bash)
 command_exists starship && eval "$(starship init bash)"
 command_exists ykman && source <(_YKMAN_COMPLETE=bash_source ykman)
+command_exists hf && eval "$(_HF_COMPLETE=bash_source hf)"
+command_exists opencode && eval "$(opencode --completions bash)"
